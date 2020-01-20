@@ -1,0 +1,20 @@
+<div class="search_result_wrapper">
+    <div class="search_result">
+        <span class="keyword">{{searchKeyword}}</span>
+        <span class="result_count">{{totalSearchResult}} GIFs</span>
+        <span class="pagination">
+          <button class="left_button" [disabled]="offset===0" (click)="previous()">
+            <img src="assets/left_arrow.png" alt="previous">
+          </button>
+          <button class="right_button" [disabled]="totalSearchResult - offset < limit" (click)="next()">
+            <img src="assets/arrow.png" alt="next">
+          </button>
+        </span>
+      </div>
+      
+      <ul *ngIf="searchResults.length>0" class="gallery_latest">   
+        <li *ngFor="let image of searchResults">
+          <img [src]="image.images.fixed_height_small.url" />
+        </li>
+      </ul>
+</div>

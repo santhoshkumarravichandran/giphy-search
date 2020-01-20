@@ -1,0 +1,19 @@
+
+<div class="search-box-wrapper" [ngClass]="isSearched()? 'with_result' : ''">
+    <div class="main_logo" [ngClass]="isSearched()? 'small_logo1' : 'main_logo1'">
+        <img src="assets/giphy-white.png" alt="">
+    </div>
+
+    <div class="searchBox" [ngClass]="isSearched()? 'with_result' : ''">
+      <input class="searchInput" type="text" [(ngModel)]="searchKeyword" placeholder="Search your GIPHY">
+      <button class="searchButton" [disabled]="searchKeyword===''" (click)="onSearch(searchKeyword)" >
+        <i class="material-icons">
+          search
+        </i>
+      </button>
+    </div>
+</div>
+
+<app-search-result [searchResults]="searchResult" [totalSearchResult]="totalSearchResult" [offset]="offset"
+  [searchKeyword]="cleanSearchKeyword" (update)="update($event)" (update)="update($event)">
+</app-search-result>

@@ -12,7 +12,7 @@ Total result of giphy's matching user query is also shown.
 
 
 LIVE Demo of the application is available here in the below link
-```https://santhoshkumarravichandran.github.io/giphysearch/```
+```https://santhoshkumarravichandran.github.io/giphy-search/```
 
 ## More about the application
 The entire application can be build with single component, How ever to demonstration feature of angular such as component communication, the app has been split into two component.
@@ -42,7 +42,7 @@ npm install -g @angular/cli
 
 Clone the application from github repository.
 ```
-https://github.com/santhoshkumarravichandran/giphysearch.git
+https://github.com/santhoshkumarravichandran/giphy-search.git
 ```
 
 Run the below command in root folder of the application to install the required dependency
@@ -65,10 +65,10 @@ This command will prepare a production copy of the application in `dist` folder.
 ## Usage Example
 
 Giphy Search allows you to search for your favorite GIPHY, you can put your search query in the search bar.
-![alt text](https://santhoshkumarravichandran.github.io/giphysearch/assets/landing_page.png)
+![alt text](https://santhoshkumarravichandran.github.io/giphy-search/assets/landing_page.png)
 
 Results
-![alt text](https://santhoshkumarravichandran.github.io/giphysearch/assets/search_results.png)
+![alt text](https://santhoshkumarravichandran.github.io/giphy-search/assets/search_results.png)
 
 ## Dependencies
 Swear words in search query are filtered. ```badword-list``` library is used to obtain the list of bad words.
