@@ -61,6 +61,14 @@ To build a production copy
 ng build --prod
 ```
 This command will prepare a production copy of the application in `dist` folder.
+```
+ng test
+```
+This command will run test unit test for all the component.(single run is set to true)
+```
+ng lint
+```
+This command will run linting test over the project
 
 ## Usage Example
 

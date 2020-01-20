@@ -14,12 +14,15 @@
       max-width: 100%;
     }
   }
-  &.with_result {
+  &.with_result  {
     height: auto;
     margin: 32px auto 0;
     max-width: 1000px;
     padding: 16px 32px;
     flex-direction: row;
+    input {
+      width:80%;
+    }
     .main_logo {
       width: 200px;
       margin-right: 16px;
